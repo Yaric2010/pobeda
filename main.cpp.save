@@ -87,22 +87,22 @@ void tomP1(int y, int x)
 {
     txSetColor(TX_TRANSPARENT);
     txSetFillColor(RGB(160,160,160));
-    POINT telo[] = {{x + 20, y + 30}, {x + 30, y + 30}, {x + 33, y + 50}, {x + 29, y + 70}, {x + 35, y + 95}, {x + 5, y + 95}, {x, y + 70}, {x + 7, y + 50}, {x + 11, y + 30},};
-    txPolygon(telo, 9);
-
-    txCircle(x + 25, y + 30, 20);
-
-    txSetFillColor(RGB(255, 255, 255));
-    txCircle(x + 20, y + 65, 10);
-
-    txEllipse(x - 20, y + 60, x + 60, y + 115);
-
-    txSetFillColor(RGB(160,160,160));
-    POINT yxo1[3] = {{x + 5, y + 30}, {x + 8, y}, {x + 30, y + 30}};
-    txPolygon(yxo1, 3);
-
-    POINT yxo2[3] = {{x + 25, y + 30}, {x + 30, y}, {x + 45, y + 30}};
+    txEllipse(x + 5, y + 76, x +63, y + 178);
+    txEllipse(x + 7, y + 22, x + 66, y+82);
+    txEllipse(x+16, y + 176 - 20, x + 35, y + 250 - 20);
+    txEllipse(x+35, y + 176 - 20, x + 56, y + 250 - 20);
+    POINT yxo[3] = {{x + 13, y + 3},{x+29, y+23},{x + 16, y+33}};
+    txPolygon(yxo, 3);
+    POINT yxo2[3] = {{x + 43, y + 24},{x + 50, y+5},{x+60,y+31}};
     txPolygon(yxo2, 3);
+    POINT ryka[4] = {{x+38,y +91},{x+94,y+103},{x+87,y+123},{x+38,y+107}};
+    txPolygon(ryka, 4);
+    txSetFillColor(TX_WHITE);
+    txCircle(x+114 - 20, y + 119, 12);
+    txCircle(x + 118 - 20, y + 122, 5);
+    txCircle(x + 119 - 20, y + 125, 5);
+    txCircle(x + 118 - 20, y + 119, 5);
+
 }
 
 void tomP2(int y, int x)
@@ -151,6 +151,7 @@ void tomP(int TomPY, int TomPX)
 
 void dp(int x, int y)
 {
+    txSetColor(TX_BLACK);
     txSetFillColor(TX_BROWN);
     txEllipse(x, y, x + 20, y + 10);
     txLine(x, y + 5, x - 15, y + 2);
@@ -166,6 +167,18 @@ void slep(int TomPX, int TomPY)
    txSleep(1);
 }
 
+
+void dog(int x, int y)
+{
+    txSetFillColor(TX_WHITE);
+    POINT dog[6] = {{x - 45, y + 25},{x + 20, y+20},{x + 45, y + 23},{x + 44, y - 30},{x + 21, y - 29},{x - 28, y - 28}};
+    txPolygon(dog, 6);
+
+
+
+
+}
+
 int main()
 {
     int TomPX = - 200;
@@ -176,12 +189,13 @@ int main()
     int GerryY = 380;
     int treeY2 = 400;
     int treeX2 = 600;
-    int boom = 50;
-
+    int dogX = 800;
+    int dogY = 200;
 
     txCreateWindow (800, 600);
 
-    //enter();
+
+    enter();
     fon_n();
     tomP(TomPY, TomPX);
     tree(treeX, treeY, treeY2, treeX2);
@@ -229,6 +243,16 @@ int main()
         txEnd();
     }
 
+    while(GerryX < 820)
+    {
+        fon_n();
+        dp(GerryX, GerryY);
+        GerryX +=3;
+        txSleep(1);
+    }
+    GerryX = 0;
+
+
     treeX -= 950;
     treeX2 -= 350;
     treeY2 += 80;
@@ -237,12 +261,23 @@ int main()
     tree(treeX, treeY, treeY2, treeX2);
     tomP(TomPY, TomPX);
 
-    while()
+    while(GerryX < 150)
     {
+        fon_2();
+        tree(treeX, treeY, treeY2, treeX2);
+        tomP(TomPY, TomPX);
+
         dp(GerryX, GerryY);
-        GerryX +=1;
+        GerryX +=3;
+        txSleep(1);
     }
 
+    while(dogX> 300)
+    {
+        dog(dogX, dogY);
+        txSleep(3);
+        dogX-=1;
+    }
 
 
 
