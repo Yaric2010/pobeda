@@ -1,285 +1,332 @@
 #include "TXLib.h"
-void enter()
+void fon_stroka(int numy)
 {
-    txDrawText(0, 0, 800, 600, "Встречайте!");
-    txSleep(3000);
-    txSetFillColor(TX_BLACK);
-    txRectangle(0, 0, 800, 600);
-    txDrawText(0, 0, 800, 600, "Самый лучший проект...");
-    txSleep(3000);
-    txSetFillColor(TX_BLACK);
-    txRectangle(0, 0, 800, 600);
-    txDrawText(0, 0, 800, 600, "....Том и Джерри!");
-    txSleep(3000);
-}
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 750);
 
-void fon_n()
-{
-    txSetFillColor(TX_GREEN);
-    txSetColor(TX_TRANSPARENT);
-    txRectangle(0, 199, 800, 600);
     txSetFillColor(TX_WHITE);
-    txRectangle(0, 0, 800, 200);
+    txRectangle(100, 100, 900, 650);
+
+
     txSetColor(TX_BLACK);
-    txLine(40, 0, 40, 200);   //короч, это забор
-    txLine(80, 0,  80, 200);
-    txLine(120, 0,  120, 200);
-    txLine(160, 0,  160, 200);
-    txLine( 200, 0,  200, 200);
-    txLine( 240, 0,  240, 200);
-    txLine( 240 + 40, 0,  240 + 40, 200);
-    txLine( 240 + 40+ 40, 0,  240 + 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40, 0, 240 + 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40, 0, 240 + 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40, 0, 240 + 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40, 0, 240 + 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40, 0,  240 + 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 0,  240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40 + 40, 0, 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40 + 40+ 40+ 40, 0,  240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40 + 40+ 40+ 40, 0,  240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40 + 40+ 40+ 40+ 40, 0,  240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40 + 40+ 40+ 40+ 40+ 40+ 40, 0,  240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40 + 40+ 40+ 40+ 40+ 40+ 40, 0,  240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-}
+    txSelectFont("Comic Sans MS", 20);
+    txTextOut(105, numy, "1");
+    numy +=15;
+    txTextOut(105, numy, "2");
+    numy +=15;
+    txTextOut(105, numy, "3");
+    numy +=15;
+    txTextOut(105, numy, "4");
+    numy +=15;
+    txTextOut(105, numy, "5");
+    numy +=15;
+    txTextOut(105, numy, "6");
+    numy +=15;
+    txTextOut(105, numy, "7");
+    numy +=15;
+    txTextOut(105, numy, "8");
+    numy +=15;
+    txTextOut(105, numy, "9");
+    numy +=15;
+    txTextOut(105, numy, "10");
+    numy +=15;
+    txTextOut(105, numy, "11");
+    numy +=15;
+    txTextOut(105, numy, "12");
+    numy +=15;
+    txTextOut(105, numy, "13");
+    numy +=15;
+    txTextOut(105, numy, "14");
+    numy +=15;
+    txTextOut(105, numy, "15");
+    numy +=15;
+    txTextOut(105, numy, "16");
+    numy +=15;
+    txTextOut(105, numy, "17");
+    numy +=15;
+    txTextOut(105, numy, "18");
+    numy +=15;
+    txTextOut(105, numy, "19");
+    numy +=15;
+    txTextOut(105, numy, "20");
+    numy +=15;
+    txTextOut(105, numy, "21");
+    numy +=15;
+    txTextOut(105, numy, "22");
+    numy +=15;
+    txTextOut(105, numy, "23");
+    numy +=15;
+    txTextOut(105, numy, "24");
+    numy +=15;
+    txTextOut(105, numy, "25");
+    numy +=15;
+    txTextOut(105, numy, "26");
+    numy +=15;
+    txTextOut(105, numy, "27");
+    numy +=15;
+    txTextOut(105, numy, "28");
+    numy +=15;
+    txTextOut(105, numy, "29");
+    numy +=15;
+    txTextOut(105, numy, "30");
+    numy +=15;
+    txTextOut(105, numy, "31");
+    numy +=15;
+    txTextOut(105, numy, "32");
+    numy +=15;
+    txTextOut(105, numy, "33");
+    numy +=15;
+    txTextOut(105, numy, "34");
+    numy +=15;
+    txTextOut(105, numy, "35");
+    numy +=15;
+    txTextOut(105, numy, "36");
 
-void fon_2()
+
+
+
+}
+void fon_zastavka(int numy)
 {
-    txSetFillColor(TX_GREEN);
-    txSetColor(TX_TRANSPARENT);
-    txRectangle(0, 199, 800, 600);
-    txSetFillColor(TX_WHITE);
-    txRectangle(0, 0, 800, 200);
+    fon_stroka(numy);
     txSetColor(TX_BLACK);
-    txLine(40, 0, 40, 200);   //короч, это забор
-    txLine(80, 0,  80, 200);
-    txLine(120, 0,  120, 200);
-    txLine(160, 0,  160, 200);
-    txLine( 200, 0,  200, 200);
-    txLine( 240, 0,  240, 200);
-    txLine( 240 + 40, 0,  240 + 40, 200);
-    txLine( 240 + 40+ 40, 0,  240 + 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40, 0, 240 + 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40, 0, 240 + 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40, 0, 240 + 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40, 0, 240 + 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40, 0,  240 + 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 0,  240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40 + 40, 0, 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40 + 40+ 40+ 40, 0,  240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40 + 40+ 40+ 40, 0,  240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40 + 40+ 40+ 40+ 40, 0,  240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40 + 40+ 40+ 40+ 40+ 40+ 40, 0,  240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txLine( 240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40 + 40+ 40+ 40+ 40+ 40+ 40, 0,  240 + 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40+ 40, 200);
-    txSetFillColor(TX_WHITE);
-    txRectangle(450,600,800,200);
-    txSetFillColor(TX_BROWN);
-    POINT star[3] = {{450, 200},{800, 0},{800, 200}};
-    txPolygon(star, 3);
-    txLine(450,200,475+50, 279+70);
-    txLine(450,200,475+70, 279+29);
-    txLine(450,200,475+140, 279+20);
-    txLine(450,200,475 + 2, 279+50);
-    txLine(450,200,475+80, 279+70);
-}
+    txSelectFont("Comic Sans MS", 70);
+    txTextOut(250, 30, "Учим основы С++, TX_lib");
 
-void tomP1(int y, int x)
-{
-    txSetColor(TX_TRANSPARENT);
-    txSetFillColor(RGB(160,160,160));
-    txEllipse(x + 5, y + 76, x +63, y + 178);
-    txEllipse(x + 7, y + 22, x + 66, y+82);
-    txEllipse(x+16, y + 176 - 20, x + 35, y + 250 - 20);
-    txEllipse(x+35, y + 176 - 20, x + 56, y + 250 - 20);
-    POINT yxo[3] = {{x + 13, y + 3},{x+29, y+23},{x + 16, y+33}};
-    txPolygon(yxo, 3);
-    POINT yxo2[3] = {{x + 43, y + 24},{x + 50, y+5},{x+60,y+31}};
-    txPolygon(yxo2, 3);
-    POINT ryka[4] = {{x+38,y +91},{x+94,y+103},{x+87,y+123},{x+38,y+107}};
-    txPolygon(ryka, 4);
-    txSetFillColor(TX_WHITE);
-    txCircle(x+114 - 20, y + 119, 12);
-    txCircle(x + 118 - 20, y + 122, 5);
-    txCircle(x + 119 - 20, y + 125, 5);
-    txCircle(x + 118 - 20, y + 119, 5);
+    txSelectFont("Comic Sans MS", 20);
+    txTextOut(130, 100, "#include 'TXLib.h'");
+    txTextOut(130, 115, "int main()");
+    txTextOut(130, 130, "{");
+    txTextOut(160, 145, "txCreateWindow(800, 600);");
+    txTextOut(160, 160, "txSetFillColor(TX_GREEN);");
+    txTextOut(160, 175, "txRectangle(0, 200, 600, 200);");
+    txTextOut(160, 190, "txSetFillColor(TX_BLUE);");
+    txTextOut(160, 205, "txRectangle(0, 0, 600, 400);");
+    txTextOut(160, 220, "txSetFillColor(TX_YELLOW);");
+    txTextOut(160, 235, "txCircle(300, 150, 35);");
+    txTextOut(130, 250, "}");
 
-}
-
-void tomP2(int y, int x)
-{
-    txSetColor(TX_TRANSPARENT);
-    txSetFillColor(RGB(160,160,160));
-    POINT telo[] = {{x + 20, y + 30}, {x + 30, y + 30}, {x + 33, y + 50}, {x + 29, y + 70}, {x + 35, y + 95}, {x + 5, y + 95}, {x, y + 70}, {x + 7, y + 50}, {x + 11, y + 30},};
-    txPolygon(telo, 9);
-
-    txCircle(x + 25, y + 30, 20);
-
-    txSetFillColor(RGB(255, 255, 255));
-    txCircle(x + 20, y + 65, 10);
-    txCircle(x + 10, y + 110, 10);
-    txCircle(x + 30, y + 60, 10);
-    txCircle(x - 10, y + 70, 10);
-    txEllipse(x - 15, y + 60, x + 55, y + 115);
-
-    txSetFillColor(RGB(160,160,160));
-    POINT yxo1[3] = {{x + 5, y + 30}, {x + 8, y}, {x + 30, y + 30}};
-    txPolygon(yxo1, 3);
-
-    POINT yxo2[3] = {{x + 25, y + 30}, {x + 30, y}, {x + 45, y + 30}};
-    txPolygon(yxo2, 3);
-}
-
-void tree(int x, int y, int y2, int x2)
-{
-    txSetFillColor(TX_BROWN);
-    POINT star[4] = {{x-20 + 600, y + 50}, {x + 20 + 600, y + 50}, {x2 + 20,y2}, {x2 - 20,y2}};
-    txPolygon(star, 4);
-    txSetFillColor(TX_GREEN);
-    txCircle(x + 600, y, 100);
-
-
-
-
-}
-
-void tomP(int TomPY, int TomPX)
-{
-    tomP1(TomPY, TomPX);
-
-
-}
-
-void dp(int x, int y)
-{
+    txSleep(8000);
+    fon_stroka(numy);
     txSetColor(TX_BLACK);
-    txSetFillColor(TX_BROWN);
-    txEllipse(x, y, x + 20, y + 10);
-    txLine(x, y + 5, x - 15, y + 2);
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Для начала давайте скачаем библиотеку (Используйте двойные ковычки!):");
+    txSelectFont("Comic Sans MS", 20);
+    txSleep(1500);
+    txSetColor(TX_GREEN);
+    txTextOut(130, 100, "#include 'TXLib.h'");
+    txSetColor(TX_BLACK);
+
+    txSleep(7500);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Теперь нам нужно создать фунцию main:");
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLUE);
+    txTextOut(130, 115, "int");
+    txSleep(900);
+    txSetColor(TX_BLACK);
+    txTextOut(155, 115, "main");
+
+    txSleep(5000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Это главная функция, все основные действия происходят в ней)");
+    txSleep(4000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Не забудьте скобочки! ()");
+
+    txSleep(1500);
+
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(189, 115, "()");
 
 
+
+
+
+    txSleep(5000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Теперь нам нужно открыть функцию main:");
+    txSleep(4000);
+
+    txSleep(3000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Это делается Фигурной скобочкой {:");
+    txSleep(4000);
+
+    txSleep(1500);
+
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(130, 130, "{");
+
+
+
+    txSleep(5000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Пришло время сделать <<окно для рисования>>:");
+    txSleep(4000);
+
+    txSleep(3000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Почти все команды TX_lib начинаются с tx....");
+    txSleep(4000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Команда txCreateWindow");
+
+    txSleep(1500);
+
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(150, 145, "txCreateWindow");
+
+    txSleep(4000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "В скобочках указываем размер в пикселях, обычно это 800 на 600");
+
+    txSleep(1500);
+
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(268, 145, "(800, 600)");
+
+    txSleep(4000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Если программа окончена и после её нет скобок, в конце нужно ставить ;");
+
+    txSleep(3000);
+
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(342, 145, ";");
+
+    txSleep(4000);
+
+
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Теперь выберем цвет обводки....");
+
+    txSleep(2000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "...Используйте команду txSetColor();");
+
+    txSleep(2000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "В скобках указываем цвет, например (TX_BLACK) или (TX_YELLOW)");
+
+    txSleep(2000);
+
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(150, 175, "txSetColor(TX_BLACK);");
+
+    txSleep(4000);
+
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Для удобства я люблю отступать строчку)");
+
+    txSleep(1500);
+    
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Тепер пришло время научится рисовать прямоугольник");
+    
+    
+    txSleep(1500);
+    
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Bcgjkmpetv ");
 
 }
 
-void slep(int TomPX, int TomPY)
-{
-   txSleep(1);
-   tomP2(TomPY, TomPX);
-   txSleep(1);
-}
-
-
-void dog(int x, int y)
-{
-    txSetFillColor(TX_WHITE);
-    POINT dog[6] = {{x - 45, y + 25},{x + 20, y+20},{x + 45, y + 23},{x + 44, y - 30},{x + 21, y - 29},{x - 28, y - 28}};
-    txPolygon(dog, 6);
 
 
 
-
-}
 
 int main()
 {
-    int TomPX = - 200;
-    int TomPY = 300;
-    int treeX = 0;
-    int treeY = 0;
-    int GerryX = 0;
-    int GerryY = 380;
-    int treeY2 = 400;
-    int treeX2 = 600;
-    int dogX = 800;
-    int dogY = 200;
+    int numy = 100;
 
-    txCreateWindow (800, 600);
+    txCreateWindow (1000, 750);
 
-
-    enter();
-    fon_n();
-    tomP(TomPY, TomPX);
-    tree(treeX, treeY, treeY2, treeX2);
-
-    while(TomPX < 540)
-    {
-        txBegin();
-        fon_n();
-        dp(GerryX, GerryY);
-        tree(treeX, treeY, treeY2, treeX2);
-        tomP(TomPY, TomPX);
-        TomPX += 5;
-        GerryX += 4;
-        slep(TomPX, TomPY);
-        txEnd();
-    }
-
-    while(treeX < 300)
-    {
-        txBegin();
-        fon_n();
-        dp(GerryX, GerryY);
-        tree(treeX, treeY, treeY2, treeX2);
-        tomP(TomPY, TomPX);
-        slep(TomPX, TomPY);
-        treeX += 2;
-        treeY +=1;
-        txEnd();
-    }
-
-    while(treeY2 > 0)
-    {
-        txBegin();
-        fon_n();
-        dp(GerryX, GerryY);
-        tree(treeX, treeY, treeY2, treeX2);
-        tomP(TomPY, TomPX);
-        slep(TomPX, TomPY);
-        treeX +=3;
-        treeY2 -=3;
-        treeY +=4;
-        treeX2 +=2;
-        TomPX +=2;
-        TomPY -=3;
-        txEnd();
-    }
-
-    while(GerryX < 820)
-    {
-        fon_n();
-        dp(GerryX, GerryY);
-        GerryX +=3;
-        txSleep(1);
-    }
-    GerryX = 0;
-
-
-    treeX -= 950;
-    treeX2 -= 350;
-    treeY2 += 80;
-    treeY -=200;
-    fon_2();
-    tree(treeX, treeY, treeY2, treeX2);
-    tomP(TomPY, TomPX);
-
-    while(GerryX < 150)
-    {
-        fon_2();
-        tree(treeX, treeY, treeY2, treeX2);
-        tomP(TomPY, TomPX);
-
-        dp(GerryX, GerryY);
-        GerryX +=3;
-        txSleep(1);
-    }
-
-    while(dogX> 300)
-    {
-        dog(dogX, dogY);
-        txSleep(3);
-        dogX-=1;
-    }
-
-
+    fon_zastavka(numy);
 
 
     txTextCursor (false);
