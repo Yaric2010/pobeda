@@ -86,6 +86,10 @@ void fon_stroka(int numy)
 
 
 }
+
+
+
+
 void fon_zastavka(int numy)
 {
     fon_stroka(numy);
@@ -116,6 +120,17 @@ void fon_zastavka(int numy)
     txSetColor(TX_GREEN);
     txTextOut(130, 100, "#include 'TXLib.h'");
     txSetColor(TX_BLACK);
+
+    for (int done = 0; done <= 5; done++)
+    {
+        char title [1024] = "";
+        sprintf (title, "%s - [%-10.*s] %d%%", txGetModuleFileName (false), done/10, "||||||||||", done);
+
+        SetWindowText (txWindow(), title);
+        SetWindowText (Win32::GetConsoleWindow(), title);
+
+        txSleep (200);
+    }
 
     txSleep(7500);
 
@@ -155,7 +170,16 @@ void fon_zastavka(int numy)
     txSetColor(TX_BLACK);
     txTextOut(189, 115, "()");
 
+    for (int done = 5; done <= 12; done++)
+    {
+        char title [1024] = "";
+        sprintf (title, "%s - [%-10.*s] %d%%", txGetModuleFileName (false), done/10, "||||||||||", done);
 
+        SetWindowText (txWindow(), title);
+        SetWindowText (Win32::GetConsoleWindow(), title);
+
+        txSleep (200);
+    }
 
 
 
@@ -184,8 +208,17 @@ void fon_zastavka(int numy)
     txSelectFont("Comic Sans MS", 20);
     txSetColor(TX_BLACK);
     txTextOut(130, 130, "{");
+txSleep(1000);
+    for (int done = 12; done <= 15; done++)
+    {
+        char title [1024] = "";
+        sprintf (title, "%s - [%-10.*s] %d%%", txGetModuleFileName (false), done/10, "||||||||||", done);
 
+        SetWindowText (txWindow(), title);
+        SetWindowText (Win32::GetConsoleWindow(), title);
 
+        txSleep (200);
+    }
 
     txSleep(5000);
 
@@ -249,6 +282,17 @@ void fon_zastavka(int numy)
     txSelectFont("Comic Sans MS", 20);
     txSetColor(TX_BLACK);
     txTextOut(342, 145, ";");
+txSleep(1000);
+    for (int done = 15; done <= 25; done++)
+    {
+        char title [1024] = "";
+        sprintf (title, "%s - [%-10.*s] %d%%", txGetModuleFileName (false), done/10, "||||||||||", done);
+
+        SetWindowText (txWindow(), title);
+        SetWindowText (Win32::GetConsoleWindow(), title);
+
+        txSleep (200);
+    }
 
     txSleep(4000);
 
@@ -284,6 +328,17 @@ void fon_zastavka(int numy)
     txSelectFont("Comic Sans MS", 20);
     txSetColor(TX_BLACK);
     txTextOut(150, 175, "txSetColor(TX_BLACK);");
+txSleep(1000);
+    for (int done = 25; done <= 30; done++)
+    {
+        char title [1024] = "";
+        sprintf (title, "%s - [%-10.*s] %d%%", txGetModuleFileName (false), done/10, "||||||||||", done);
+
+        SetWindowText (txWindow(), title);
+        SetWindowText (Win32::GetConsoleWindow(), title);
+
+        txSleep (200);
+    }
 
     txSleep(4000);
 
@@ -295,7 +350,47 @@ void fon_zastavka(int numy)
     txSelectFont("Comic Sans MS", 30);
     txTextOut(90, 30, "Для удобства я люблю отступать строчку)");
 
-    txSleep(1500);
+    txSleep(3000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Теперь заливка...");
+
+
+    txSleep(2000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Похоже на обвотку только с Fill = txSetFillColor();");
+
+
+    txSleep(2500);
+
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(150, 190, "txSetFillColor(TX_GREEN);");
+
+    txSleep(1000);
+
+    for (int done = 30; done <= 35; done++)
+    {
+        char title [1024] = "";
+        sprintf (title, "%s - [%-10.*s] %d%%", txGetModuleFileName (false), done/10, "||||||||||", done);
+
+        SetWindowText (txWindow(), title);
+        SetWindowText (Win32::GetConsoleWindow(), title);
+
+        txSleep (200);
+    }
+
+    txSleep(3000);
+
 
     txSetColor(TX_TRANSPARENT);
     txSetFillColor(RGB(240, 170, 140));
@@ -305,7 +400,7 @@ void fon_zastavka(int numy)
     txTextOut(90, 30, "Тепер пришло время научится рисовать прямоугольник");
 
 
-    txSleep(1500);
+    txSleep(3000);
 
     txSetColor(TX_TRANSPARENT);
     txSetFillColor(RGB(240, 170, 140));
@@ -314,7 +409,7 @@ void fon_zastavka(int numy)
     txSelectFont("Comic Sans MS", 30);
     txTextOut(90, 30, "Используем txRectangle");
 
-    txSleep(2000);
+    txSleep(3000);
 
     txSetColor(TX_TRANSPARENT);
     txSetFillColor(RGB(240, 170, 140));
@@ -323,11 +418,45 @@ void fon_zastavka(int numy)
     txSelectFont("Comic Sans MS", 30);
     txTextOut(90, 30, "В скобках указываем кординаты правой верхней точки и левой нижней:");
 
-    txSleep(2000);
+    txSleep(3000);
 
     txSelectFont("Comic Sans MS", 20);
     txSetColor(TX_BLACK);
-    txTextOut(150, 190, "txRectangle(0, 200, 800, 200);");
+    txTextOut(150, 205, "txRectangle(0, 200, 800, 200);");
+
+    txSleep(1000);
+    for (int done = 35; done <= 42; done++)
+    {
+        char title [1024] = "";
+        sprintf (title, "%s - [%-10.*s] %d%%", txGetModuleFileName (false), done/10, "||||||||||", done);
+
+        SetWindowText (txWindow(), title);
+        SetWindowText (Win32::GetConsoleWindow(), title);
+
+        txSleep (200);
+    }
+
+    txSleep(3000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Теперь давайте посмотрим что у нас получилось....");
+
+    txSleep(2000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "...нажимаем F5");
+
+    txSleep(2000);
+
+
 
 }
 
@@ -342,6 +471,7 @@ int main()
     txCreateWindow (1000, 750);
 
     fon_zastavka(numy);
+
 
 
     txTextCursor (false);
