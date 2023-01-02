@@ -92,7 +92,9 @@ void fon_stroka(int numy)
 
 void fon_zastavka(int numy)
 {
+
     fon_stroka(numy);
+
     txSetColor(TX_BLACK);
     txSelectFont("Comic Sans MS", 70);
     txTextOut(250, 30, "Учим основы С++, TX_lib");
@@ -208,6 +210,9 @@ void fon_zastavka(int numy)
     txSelectFont("Comic Sans MS", 20);
     txSetColor(TX_BLACK);
     txTextOut(130, 130, "{");
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(130, 280 + 45 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15, "}");
 txSleep(1000);
     for (int done = 12; done <= 15; done++)
     {
@@ -286,7 +291,7 @@ txSleep(1000);
     for (int done = 15; done <= 25; done++)
     {
         char title [1024] = "";
-        sprintf (title, "%s - [%-20.*s] %d%%", txGetModuleFileName (false), done/20, "||||||||||||||||||||", done);
+        sprintf (title, "%s - [%-10.*s] %d%%", txGetModuleFileName (false), done/10, "||||||||||", done);
 
         SetWindowText (txWindow(), title);
         SetWindowText (Win32::GetConsoleWindow(), title);
@@ -332,7 +337,7 @@ txSleep(1000);
     for (int done = 25; done <= 30; done++)
     {
         char title [1024] = "";
-        sprintf (title, "%s - [%-20.*s] %d%%", txGetModuleFileName (false), done/20, "||||||||||||||||||||", done);
+        sprintf (title, "%s - [%-10.*s] %d%%", txGetModuleFileName (false), done/10, "||||||||||", done);
 
         SetWindowText (txWindow(), title);
         SetWindowText (Win32::GetConsoleWindow(), title);
@@ -381,7 +386,7 @@ txSleep(1000);
     for (int done = 30; done <= 35; done++)
     {
         char title [1024] = "";
-        sprintf (title, "%s - [%-20.*s] %d%%", txGetModuleFileName (false), done/20, "||||||||||||||||||||", done);;
+        sprintf (title, "%s - [%-10.*s] %d%%", txGetModuleFileName (false), done/10, "||||||||||", done);
 
         SetWindowText (txWindow(), title);
         SetWindowText (Win32::GetConsoleWindow(), title);
@@ -422,13 +427,13 @@ txSleep(1000);
 
     txSelectFont("Comic Sans MS", 20);
     txSetColor(TX_BLACK);
-    txTextOut(150, 205, "txRectangle(0, 200, 800, 200);");
+    txTextOut(150, 205, "txRectangle(0, 400, 800, 600);");
 
     txSleep(1000);
     for (int done = 35; done <= 42; done++)
     {
         char title [1024] = "";
-        sprintf (title, "%s - [%-20.*s] %d%%", txGetModuleFileName (false), done/20, "||||||||||||||||||||", done);
+        sprintf (title, "%s - [%-10.*s] %d%%", txGetModuleFileName (false), done/10, "||||||||||", done);
 
         SetWindowText (txWindow(), title);
         SetWindowText (Win32::GetConsoleWindow(), title);
@@ -457,6 +462,338 @@ txSleep(1000);
     txSleep(2000);
 
 
+    txSetColor(TX_BLACK);
+    txSetFillColor(TX_BLACK);
+    txRectangle(600, 200, 800, 310);
+
+    txSetFillColor(TX_GREEN);
+    txRectangle(600, 275, 800, 310);
+
+
+    txSleep(3000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Отлично! Нажимаем f для закрытия окна.");
+
+    txSleep(1000);
+
+    txSetFillColor(TX_WHITE);
+    txSetColor(TX_WHITE);
+    txRectangle(600, 200, 800, 310);
+
+    txSleep(3000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Приступаем к небу, думаю вы уже догадываетесь как его нарисовать...");
+
+
+    txSleep(3000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Если же нет, смотрите:");
+
+    txSleep(3000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Выбираем синий цвет(txSetFillColor();) и рисуем квадрат(txRectangle();)");
+
+    txSleep(3000);
+
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(150, 235, "txSetFillColor(TX_BLUE);");
+
+    txSleep(1500);
+
+    txTextOut(150, 250, "txRectangle(0, 0, 800, 400);");
+
+    txSleep(1000);
+    for (int done = 42; done <= 55; done++)
+    {
+        char title [1024] = "";
+        sprintf (title, "%s - [%-10.*s] %d%%", txGetModuleFileName (false), done/10, "||||||||||", done);
+
+        SetWindowText (txWindow(), title);
+        SetWindowText (Win32::GetConsoleWindow(), title);
+
+        txSleep (200);
+    }
+
+    txSleep(3000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "А как же хорошо летом на солнышке лежать....");
+
+    txSleep(2000);
+
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Давайте нарисуем его!");
+
+    txSleep(2000);
+
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Circle - вот команда для круга");
+
+    txSleep(2000);
+
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "txCircle() - в скобках кординаты x,y, а затем диаметр круга");
+
+    txSleep(4000);
+
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(150, 295, "txCircle(100, 100, 25);");
+
+    txSleep(2000);
+
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Кажется мы забыли выбрать цвет...");
+
+    txSleep(2000);
+
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(150, 280, "txSetFillColor(TX_YELLOW);");
+
+    txSleep(1000);
+    for (int done = 55; done <= 63; done++)
+    {
+        char title [1024] = "";
+        sprintf (title, "%s - [%-10.*s] %d%%", txGetModuleFileName (false), done/10, "||||||||||", done);
+
+        SetWindowText (txWindow(), title);
+        SetWindowText (Win32::GetConsoleWindow(), title);
+
+        txSleep (200);
+    }
+
+    txSleep(2000);
+
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "А вы видели когда-нибудь чтобы солнце остановилось?");
+
+    txSleep(2000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Так давайте же его подтолкнём!");
+
+    txSleep(2000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Используйте while()");
+
+    txSleep(2000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Запихиваем всё внутрь:");
+
+    txSleep(2000);
+
+    fon_stroka(numy);
+
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(150, 280 + 45 + 15, "txCircle(100, 100, 25);");
+    txTextOut(150, 280 + 45, "txSetFillColor(TX_YELLOW);");
+    txTextOut(150, 205 + 45, "txRectangle(0, 0, 800, 400)");
+    txTextOut(150, 235 + 45, "txSetFillColor(TX_BLUE);");
+    txTextOut(150, 235 + 60, "txRectangle(0, 400, 800, 600)");
+    txTextOut(130, 280 + 45 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15 + 15, "}");
+    txTextOut(150, 190 + 45, "txSetFillColor(TX_GREEN);");
+    txTextOut(150, 175 + 45, "txSetColor(TX_BLACK);");
+    txTextOut(130, 115, "int main()");
+    txTextOut(130, 130, "{");
+    txTextOut(130, 100, "#include 'TXLib.h'");
+    txTextOut(150, 145, "txCreateWindow(800, 600);");
+    txSleep(2000);
+    txTextOut(150, 175, "while");
+
+    txSleep(3000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Открываем функцию while");
+
+    txSleep(3000);
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+
+    txTextOut(150, 190, "{");
+    txSleep(3000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Теперь создадим переменную Xsun");
+
+    txSleep(3000);
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(150, 160, "int Xsun = 800;");
+    txSleep(3000);
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Указываем в скобках то что пока Xsun > 100 - действия в скобках будут повторяться");
+
+    txSleep(3000);
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(185, 175, "(Xsun > 100)");
+
+    txSleep(3000);
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Молодец! Теперь сделаем чтобы переменная Xsun уменьшалась:");
+
+    txSleep(3000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Xsun -=1;");
+
+    txSleep(3000);
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(150, 295 + 45 + 15, "Xsun -=1;");
+
+    txSleep(3000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "И сделаем задержку в несколько милли-секунд...");
+
+    txSleep(3000);
+    txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(150, 295 + 45 + 30, "txSleep(5);");
+
+    txSleep(3000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "And закрываем функцию while()");
+
+    txSleep(3000);
+txSelectFont("Comic Sans MS", 20);
+    txSetColor(TX_BLACK);
+    txTextOut(150, 295 + 45 + 45, "}");
+
+    txSleep(1000);
+    for (int done = 63; done <= 80; done++)
+    {
+        char title [1024] = "";
+        sprintf (title, "%s - [%-10.*s] %d%%", txGetModuleFileName (false), done/10, "||||||||||", done);
+
+        SetWindowText (txWindow(), title);
+        SetWindowText (Win32::GetConsoleWindow(), title);
+
+        txSleep (100);
+    }
+
+    txSleep(2000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Осталось заменить кординату <<X>> в txCircle");
+
+    txSleep(3000);
+
+    txSetColor(TX_TRANSPARENT);
+    txSetFillColor(RGB(240, 170, 140));
+    txRectangle(0, 0, 1000, 100);
+
+    txSelectFont("Comic Sans MS", 30);
+    txTextOut(90, 30, "Для этого вместо 100 вписываем нашу переменную Xsun");
+
+    txSleep(3000);
+
+    txSetFillColor(TX_WHITE);
+    txSetColor(TX_WHITE);
+    txRectangle(150, 280 + 45 + 15, 150 + 24, 280 + 45 + 15 + 200);
+    txSetColor(TX_BLACK);
+    txSelectFont("Comic Sans MS", 20);
+    txTextOut(150, 280 + 45 + 15, "txCircle(Xsun, 100, 25);");
 
 }
 
