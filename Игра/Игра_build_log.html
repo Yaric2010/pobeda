@@ -4,26 +4,68 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 <body>
 <tt>
-Build started on: <u>12-01-2023 at 10:24.50</u><br />
-Build ended on: <u>12-01-2023 at 10:24.54</u><p />
+Build started on: <u>12-01-2023 at 20:22.59</u><br />
+Build ended on: <u>12-01-2023 at 20:23.04</u><p />
 <b>-------------- Build: Debug in Игра (compiler: NOT FOR PROJECTS! = MinGW GCC + Strict + Fast + Save (Requires Git))---------------</b><br />
-g++git-auto.bat "C:\Users\Kids\Desktop\Игра\main.cpp" -o bin\Debug\Игра.exe -mwindows  -Wall -fexceptions  -g  -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equal -Winline -Wunreachable-code -Wmissing-declarations -Wmissing-include-dirs -Wswitch-enum -Wswitch-default -Weffc++ -Wmain -Wextra -Wall -g -pipe -fexceptions -Wcast-qual -Wconversion -Wctor-dtor-privacy -Wempty-body -Wformat-security -Wformat=2 -Wignored-qualifiers -Wlogical-op -Wmissing-field-initializers -Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing -Wstrict-null-sentinel -Wtype-limits -Wwrite-strings -D_DEBUG -D_EJUDGE_CLIENT_SIDE -D_EJC<br />
+g++git-auto.bat "C:\Users\Admin\Desktop\Игра\main.cpp" -o bin\Debug\Игра.exe -mwindows  -Wall -fexceptions  -g  -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equal -Winline -Wunreachable-code -Wmissing-declarations -Wmissing-include-dirs -Wswitch-enum -Wswitch-default -Weffc++ -Wmain -Wextra -Wall -g -pipe -fexceptions -Wcast-qual -Wconversion -Wctor-dtor-privacy -Wempty-body -Wformat-security -Wformat=2 -Wignored-qualifiers -Wlogical-op -Wmissing-field-initializers -Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing -Wstrict-null-sentinel -Wtype-limits -Wwrite-strings -D_DEBUG -D_EJUDGE_CLIENT_SIDE -D_EJC<br />
 ------------------------------------------------------------------------------------------------------<br />
 Compilation ERRORS:<br />
 <br />
-C:\Users\Kids\Desktop\Игра\main.cpp: In function 'void boll(int, int)':<br />
-<font color="#0000ff">C:\Users\Kids\Desktop\Игра\main.cpp:3:6: warning: no previous declaration for 'void boll(int, int)' [-Wmissing-declarations]</font><br />
- void boll(int x, int y)<br />
+C:\Users\Admin\Desktop\Игра\main.cpp: In function 'void player(int, int)':<br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:3:6: warning: no previous declaration for 'void player(int, int)' [-Wmissing-declarations]</font><br />
+ void player(int x, int y)<br />
       ^<br />
-C:\Users\Kids\Desktop\Игра\main.cpp: In function 'void yr1()':<br />
-<font color="#0000ff">C:\Users\Kids\Desktop\Игра\main.cpp:10:6: warning: no previous declaration for 'void yr1()' [-Wmissing-declarations]</font><br />
- void yr1()<br />
+C:\Users\Admin\Desktop\Игра\main.cpp: In function 'void spawn()':<br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:10:6: warning: no previous declaration for 'void spawn()' [-Wmissing-declarations]</font><br />
+ void spawn()<br />
       ^<br />
+C:\Users\Admin\Desktop\Игра\main.cpp: In function 'int main()':<br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:67:28: warning: suggest parentheses around '&amp;&amp;' within '||' [-Wparentheses]</font><br />
+             if(xplay &gt; 210 and yplay &lt; 290 or yplay &gt; 290)<br />
+                            ^<br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:69:47: warning: suggest parentheses around '&amp;&amp;' within '||' [-Wparentheses]</font><br />
+                 if(xplay &lt; 302 or xplay &gt; 510 and yplay &lt; 290 or yplay &gt; 290)<br />
+                                               ^<br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:71:27: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+                     xplay -=V;<br />
+                           ^<br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:71:27: warning: conversion to 'int' from 'float' may alter its value [-Wconversion]</font><br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:77:43: warning: suggest parentheses around '&amp;&amp;' within '||' [-Wparentheses]</font><br />
+             if(xplay &lt; 290 or xplay &gt; 508 and yplay &lt; 290 or yplay &gt; 290)<br />
+                                           ^<br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:79:31: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+                 xplay=xplay + V;<br />
+                               ^<br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:79:29: warning: conversion to 'int' from 'float' may alter its value [-Wconversion]</font><br />
+                 xplay=xplay + V;<br />
+                             ^<br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:86:43: warning: suggest parentheses around '&amp;&amp;' within '||' [-Wparentheses]</font><br />
+             if(xplay &gt; 210 or xplay &lt; 210 and yplay &gt; 290)<br />
+                                           ^<br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:88:62: warning: suggest parentheses around '&amp;&amp;' within '||' [-Wparentheses]</font><br />
+                 if(xplay &lt; 300 or xplay &gt; 510 or xplay &lt; 510 and yplay &gt; 290)<br />
+                                                              ^<br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:90:27: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+                     yplay -=V;<br />
+                           ^<br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:90:27: warning: conversion to 'int' from 'float' may alter its value [-Wconversion]</font><br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:97:27: warning: conversion to 'float' from 'int' may alter its value [-Wconversion]</font><br />
+             yplay=yplay + V;<br />
+                           ^<br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:97:25: warning: conversion to 'int' from 'float' may alter its value [-Wconversion]</font><br />
+             yplay=yplay + V;<br />
+                         ^<br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:105:19: warning: conversion to 'float' from 'double' may alter its value [-Wconversion]</font><br />
+                 V += 0.001;<br />
+                   ^<br />
+<font color="#0000ff">C:\Users\Admin\Desktop\Игра\main.cpp:110:15: warning: conversion to 'float' from 'double' may alter its value [-Wconversion]</font><br />
+             V -= 0.005;<br />
+               ^<br />
 ------------------------------------------------------------------------------------------------------<br />
-Autosaving to the Git repository in C:/Users/Kids/Desktop//.git-auto/... <br />
+Autosaving to the Git repository in C:/Users/Admin/Desktop//.git-auto/... <br />
 Output size is 2,24 MB<br />
-<font color="#0000ff">Process terminated with status 0 (0 minutes, 3 seconds)</font><br />
-<font color="#0000ff">0 errors, 2 warnings (0 minutes, 3 seconds)</font><br />
+<font color="#0000ff">Process terminated with status 0 (0 minutes, 5 seconds)</font><br />
+<font color="#0000ff">0 errors, 17 warnings (0 minutes, 5 seconds)</font><br />
 </tt>
 </body>
 </html>
