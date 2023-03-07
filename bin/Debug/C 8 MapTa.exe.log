@@ -1,0 +1,58 @@
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Admin\Desktop\C 8 MapTa\bin\Debug\C 8 MapTa.exe, файл: c:\codelblock\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x2048 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004221C3 in C:\Users\Admin\Desktop\C 8 MapTa\bin\Debug\C 8 MapTa.exe: txBitBlt() at c:/codelblock/codeblocks/mingw/include/txlib.h (13628)
+
+# 1 0x0042BADE in C:\Users\Admin\Desktop\C 8 MapTa\bin\Debug\C 8 MapTa.exe: main() at C:/Users/Admin/Desktop/C 8 MapTa/main.cpp (14):
+
+     12:     txSleep(3000);
+     13: 
+=>   14:     txBitBlt (txDC(), 0, 0, 800, 800, fon1);
+     15: 
+     16: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\codelblock\codeblocks\mingw\include\txlib.h (13628):
+
+  13626:     {
+  13627: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13628: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13629: 
+  13630: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at C:\Users\Admin\Desktop\C 8 MapTa\main.cpp (14):
+
+     12:     txSleep(3000);
+     13: 
+=>   14:     txBitBlt (txDC(), 0, 0, 800, 800, fon1);
+     15: 
+     16: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codelblock\codeblocks\mingw\include\txlib.h
+Compiled:	Mar  7 2023 17:18:49, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Mar 07 2023 17:20:18
+
+Run file:	C:\Users\Admin\Desktop\C 8 MapTa\bin\Debug\C 8 MapTa.exe
+Directory:	C:\Users\Admin\Desktop\C 8 MapTa\bin\Debug
+
+--------------------------------------------------
